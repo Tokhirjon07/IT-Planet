@@ -1,0 +1,225 @@
+.contactpage {
+  background-image: url("../imgs/homeWorld.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .contact {
+    height: 100vh;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.7rem 1% 0.5rem 1%;
+      border-bottom: 1.5px solid rgb(219, 216, 216);
+      width: 90%;
+      margin: auto;
+      .nav-menu {
+        .nav-link {
+          text-decoration: none;
+          padding: 0 2rem;
+          color: aliceblue;
+          font-size: 1.8rem;
+          letter-spacing: 0.2rem;
+          &:hover {
+            color: #30bee0;
+            transition: all 0.3s linear;
+          }
+        }
+      }
+      h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.2rem;
+        color: rgb(219, 216, 216);
+      }
+      .icons {
+        color: rgb(203, 199, 199);
+        display: none;
+      }
+    }
+
+    .contact-form {
+      margin: 5rem auto 2rem auto;
+      width: 50%;
+      background-color: rgb(64, 63, 63);
+      padding: 1rem;
+      border-radius: 0.4rem;
+      h2 {
+        text-align: center;
+        color: aliceblue;
+        text-transform: uppercase;
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+        margin: 2rem 0;
+        span {
+          color: #f98213;
+          font-size: 3.5rem;
+        }
+      }
+      form {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        div {
+          position: relative;
+          .input-icon {
+            position: absolute;
+            top: 37%;
+            left: 5%;
+            font-size: 1.8rem;
+            text-align: center;
+            color: #f98213;
+            padding: 0 1rem;
+          }
+          input {
+            width: 90%;
+            color: aliceblue;
+            background: transparent;
+            margin: 1.5rem 1rem;
+            padding: 1.2rem 2rem 1.2rem 4rem;
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            letter-spacing: 0.5rem;
+            outline: none;
+            border: 1px solid #30bee0;
+            border-radius: 0.2rem;
+          }
+          input::placeholder {
+            color: aliceblue;
+          }
+          input:focus {
+            transition: all 0.2s linear;
+            box-shadow: 1px 2px #30bee0;
+          }
+          input:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    display: inline-block;
+    padding: 1rem 5rem;
+    margin-bottom: 3rem;
+    button {
+      padding: 1.1rem 4rem;
+      letter-spacing: 0.3rem;
+      font-size: 1.7rem;
+      text-transform: capitalize;
+      background: transparent;
+      border: 1px solid #30bee0;
+      border-radius: 0.3rem;
+      color: aliceblue;
+      .info-icon {
+        padding-right: 1rem;
+        font-size: 1.3rem;
+      }
+      &:hover {
+        color: #30bee0;
+        border: 1.5px solid #30bee0;
+        transform: translateY(-5px);
+        transition: all 0.4s linear;
+        box-shadow: rgba(142, 141, 141, 0.4) 0px 2px 4px,
+          rgba(172, 170, 170, 0.3) 0px 7px 13px -3px,
+          rgba(167, 165, 165, 0.2) 0px -3px 0px inset;
+      }
+    }
+  }
+}
+
+// Media Query Styles Start
+@media (min-width: 0px) and (max-width: 550px) {
+  .contactpage {
+    .contact {
+      height: 100vh;
+      nav {
+        .nav-menu {
+          .nav-link {
+            display: none;
+          }
+        }
+        h1 {
+          font-size: 2.7rem;
+        }
+        .icons {
+          font-size: 2.2rem;
+          border-bottom: none;
+          display: block;
+        }
+      }
+
+      .contact-form {
+        width: 90%;
+        h2 {
+          span {
+          }
+        }
+        form {
+          div {
+            .input-icon {
+            }
+            input {
+            }
+          }
+        }
+      }
+    }
+    .btn {
+      padding: 1rem 3.5rem;
+      button {
+        padding: 1rem 3rem;
+        &:hover {
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) and (max-width: 700px) {
+  .contactpage {
+    .contact {
+      height: 100vh;
+      nav {
+        .nav-menu {
+          .nav-link {
+            display: none;
+          }
+        }
+        h1 {
+          font-size: 2.7rem;
+        }
+        .icons {
+          font-size: 2.2rem;
+          border-bottom: none;
+          display: block;
+        }
+      }
+
+      .contact-form {
+        width: 90%;
+        h2 {
+          span {
+          }
+        }
+        form {
+          div {
+            .input-icon {
+            }
+            input {
+            }
+          }
+        }
+      }
+    }
+    .btn {
+      padding: 1rem 3.5rem;
+      button {
+        padding: 1rem 3rem;
+        &:hover {
+        }
+      }
+    }
+  }
+}
+// Media Query Styles End

@@ -1,0 +1,36 @@
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Partial Scss
+@import "./navbar";
+@import "./home";
+@import "./loading";
+@import "./course";
+@import "./responsivenav";
+@import "./details";
+@import "./contact";
+@import "./footer";
+// Partial Scss
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0.9rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #30bee0;
+  border-radius: 0.2rem;
+}

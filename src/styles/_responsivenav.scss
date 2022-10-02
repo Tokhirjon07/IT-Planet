@@ -1,0 +1,30 @@
+.reponsivenav {
+  background-color: rgba(89, 89, 89, 0.25);
+  backdrop-filter: blur(17.5px);
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgb(128, 128, 128);
+  position: absolute;
+  top: 13%;
+  width: 75%;
+  height: 100vh;
+  z-index: 100;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.5rem;
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    .link {
+      text-decoration: none;
+      color: #fff;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      line-height: 2.5rem;
+      padding: 2.1rem 5rem;
+      &:hover {
+        border-left: 2px solid red;
+        transition: all 0.5s linear;
+      }
+    }
+  }
+}

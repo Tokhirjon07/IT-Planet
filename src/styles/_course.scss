@@ -1,0 +1,402 @@
+.coursepage {
+  // HOME STYLES SECTION STARTED
+  .courses-container {
+    background-image: url("../imgs/homeCourse.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.7rem 1% 0.5rem 1%;
+      border-bottom: 1.5px solid rgb(219, 216, 216);
+      width: 90%;
+      margin: auto;
+      .nav-menu {
+        .nav-link {
+          text-decoration: none;
+          padding: 0 2rem;
+          color: aliceblue;
+          font-size: 1.8rem;
+          letter-spacing: 0.2rem;
+          &:hover {
+            color: #30bee0;
+            transition: all 0.3s linear;
+          }
+        }
+      }
+      h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.2rem;
+        color: rgb(219, 216, 216);
+      }
+      .icons {
+        color: rgb(203, 199, 199);
+        display: none;
+      }
+    }
+  }
+
+  .info-planet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 3rem auto;
+    padding-left: 3rem;
+    h4 {
+      font-size: 2.5rem;
+      letter-spacing: 0.3rem;
+      line-height: 3.1rem;
+      color: rgb(219, 216, 216);
+      margin: 1.9rem 0;
+      font-weight: 450;
+      span {
+        color: #30bee0;
+        font-size: 2.8rem;
+      }
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 3.1rem;
+      letter-spacing: 0.2rem;
+      color: rgb(219, 216, 216);
+      margin: 0.7rem 0;
+    }
+  }
+  .btn {
+    button {
+      background: transparent;
+      outline: none;
+      border: 1.5px solid rgb(203, 199, 199);
+      text-transform: capitalize;
+      padding: 1rem 3rem;
+      letter-spacing: 0.3rem;
+      font-size: 2rem;
+      border-radius: 3rem;
+      color: rgb(203, 199, 199);
+      margin-left: 13rem;
+      &:hover {
+        color: #30bee0;
+        border: 1.5px solid #30bee0;
+        cursor: pointer;
+        transition: all 0.3s linear;
+        transform: translateY(-3px);
+        box-shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
+          rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
+          rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
+      }
+    }
+  }
+}
+// HOME STYLES SECTION ENDED
+
+// BENEFIT STYLES SECTION STARTED
+.benefits {
+  min-height: 100vh;
+  width: 88%;
+  margin: 4rem auto auto;
+  .card-benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+    .benefit {
+      background-color: rgba(75, 75, 75, 0.25);
+      backdrop-filter: blur(35px);
+      -webkit-backdrop-filter: blur(35px);
+      border: 0.994318px solid rgba(255, 255, 255, 0.18);
+      border-radius: 11px;
+      -webkit-border-radius: 11px;
+      color: rgb(128, 128, 128);
+      width: 42%;
+      height: 30vh;
+      margin: 2rem 1rem;
+      padding: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 3rem;
+      &:hover {
+        transform: translateY(-5px);
+        cursor: pointer;
+        transition: all 0.3s linear;
+        border: 1px solid #30bee0;
+        box-shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
+          rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
+          rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
+      }
+      h2 {
+        color: rgb(219, 216, 216);
+        letter-spacing: 0.2rem;
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: 450;
+        font-size: 1.8rem;
+        .benefit-icon {
+          font-size: 2.5rem;
+          padding-right: 1rem;
+          color: #f98213;
+        }
+        span {
+          color: #30bee0;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+// BENEFIT STYLES SECTION ENDED
+
+// COURSE STYLES SECTION STARTED
+.containers {
+  h3 {
+    text-align: center;
+    color: #ccc;
+    font-size: 4rem;
+    font-weight: lighter;
+    letter-spacing: 0.3rem;
+  }
+  .course-cards {
+    min-height: 100vh;
+    width: 90%;
+    margin: 2rem auto auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .card {
+      width: 29%;
+      margin: 3rem 0;
+
+      img {
+        border-radius: 0.2rem;
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+      }
+      .info {
+        padding: 1rem;
+        background-color: rgba(75, 75, 75, 0.25);
+        backdrop-filter: blur(45px);
+        h2 {
+          font-size: 2rem;
+          letter-spacing: 0.2rem;
+          text-transform: uppercase;
+          color: #dee1e2;
+        }
+        button {
+          margin: 1rem 0;
+          padding: 0.8rem 1.8rem;
+          letter-spacing: 0.2rem;
+          font-size: 1.5rem;
+          text-transform: capitalize;
+          color: #ccc;
+          background: transparent;
+          border: 1px solid #ccc;
+          border-radius: 0.2rem;
+          &:hover {
+            color: #30bee0;
+            cursor: pointer;
+            transition: all 0.3s linear;
+            border: 1px solid #30bee0;
+            box-shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
+              rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
+              rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
+          }
+          &:active {
+            transition: all 0.2s linear;
+            box-shadow: none;
+          }
+        }
+      }
+      .line {
+        width: 100%;
+        height: 0.3rem;
+        background-color: #30bee0;
+      }
+    }
+  }
+}
+
+// COURSE STYLES SECTION ENDED
+
+// Media Query Styles Start
+@media (min-width: 0px) and (max-width: 550px) {
+  // HOME STYLES SECTION STARTED
+  .coursepage {
+    .courses-container {
+      nav {
+        border-bottom: 1.5px solid rgb(219, 216, 216);
+        width: 90%;
+        margin: auto;
+        .nav-menu {
+          .nav-link {
+            display: none;
+          }
+        }
+        h1 {
+          font-size: 2.8rem;
+          letter-spacing: 0.3rem;
+          color: rgb(219, 216, 216);
+        }
+        .icons {
+          font-size: 2.5rem;
+          border-bottom: none;
+          display: block;
+        }
+      }
+    }
+
+    .info-planet {
+      width: 86%;
+      h4 {
+        font-size: 2.4rem;
+        letter-spacing: 0.2rem;
+        line-height: 3rem;
+        margin: 2rem 0;
+      }
+      p {
+        line-height: 2.9rem;
+        margin: 0.6rem 0;
+      }
+    }
+    .btn {
+      button {
+        display: none;
+      }
+    }
+  }
+  // HOME STYLES SECTION ENDED
+
+  // BENEFIT STYLES SECTION STARTED
+  .benefits {
+    width: 83%;
+    .card-benefits {
+      .benefit {
+        width: 100%;
+        h2 {
+          font-size: 1.8rem;
+          span {
+          }
+        }
+      }
+    }
+  }
+  // BENEFIT STYLES SECTION ENDED
+
+  // COURSE STYLES SECTION STARTED
+  .containers {
+    h3 {
+      font-size: 3.5rem;
+    }
+    .course-cards {
+      width: 80%;
+      .card {
+        width: 100%;
+
+        img {
+          height: 35vh;
+        }
+      }
+    }
+  }
+  // COURSE STYLES SECTION ENDED
+}
+
+@media (min-width: 550px) and (max-width: 700px) {
+  // HOME STYLES SECTION STARTED
+  .coursepage {
+    .courses-container {
+      nav {
+        border-bottom: 1.5px solid rgb(219, 216, 216);
+        width: 90%;
+        margin: auto;
+        .nav-menu {
+          .nav-link {
+            display: none;
+          }
+        }
+        h1 {
+          font-size: 2.8rem;
+          letter-spacing: 0.3rem;
+          color: rgb(219, 216, 216);
+        }
+        .icons {
+          font-size: 2.5rem;
+          border-bottom: none;
+          display: block;
+        }
+      }
+    }
+
+    .info-planet {
+      width: 86%;
+      // margin: 3rem auto;
+      // padding-left: 3rem;
+      h4 {
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+        line-height: 3.2rem;
+        margin: 2rem 0;
+        span {
+          // color: rgb(247, 129, 56);
+        }
+      }
+      p {
+        line-height: 3rem;
+        font-size: 1.9rem;
+        margin: 0.6rem 0;
+      }
+    }
+    .btn {
+      button {
+        display: none;
+        &:hover {
+        }
+      }
+    }
+  }
+  // HOME STYLES SECTION ENDED
+
+  // BENEFIT STYLES SECTION STARTED
+  .benefits {
+    width: 83%;
+    .card-benefits {
+      .benefit {
+        width: 40%;
+        h2 {
+          font-size: 1.7rem;
+          span {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+  // BENEFIT STYLES SECTION ENDED
+
+  // COURSE STYLES SECTION STARTED
+  .containers {
+    h3 {
+      font-size: 3.5rem;
+    }
+    .course-cards {
+      width: 90%;
+      .card {
+        width: 49%;
+        margin: 2rem 0.2rem;
+        img {
+          height: 35vh;
+        }
+      }
+    }
+  }
+  // COURSE STYLES SECTION ENDED
+}
+// Media Query Styles End

@@ -1,0 +1,36 @@
+.nav {
+  nav {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 220, 220);
+    width: 65%;
+    margin: 0 auto;
+    padding: 1.8rem 0;
+    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    .link {
+      padding: 0 2rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.8rem;
+      letter-spacing: 0.2rem;
+      font-weight: 500;
+
+      &:hover {
+        color: rgb(30, 82, 164);
+        transition: all 0.3s linear;
+      }
+    }
+    .leftline {
+      border-left: 2px solid rgb(52, 33, 88);
+    }
+  }
+}
