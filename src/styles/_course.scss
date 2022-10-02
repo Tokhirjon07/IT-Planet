@@ -1,40 +1,56 @@
+// Sass Variables
+$blue: #30bee0;
+$gray: rgb(229, 228, 228);
+$white: aliceblue;
+$darkgray: rgb(135, 135, 135);
+$orange: rgb(247, 129, 56);
+$anim: all 0.3s linear;
+$spacing: 0.2rem;
+$radius: 0.4rem;
+$shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
+  rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
+  rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
+// Sass Variables[
+
 .coursepage {
   // HOME STYLES SECTION STARTED
   .courses-container {
-    background-image: url("../imgs/homeCourse.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background : {
+      image: url("../imgs/homeCourse.webp");
+      position: center;
+      repeat: no-repeat;
+      size: cover;
+      attachment: fixed;
+    }
     min-height: 100vh;
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1.7rem 1% 0.5rem 1%;
-      border-bottom: 1.5px solid rgb(219, 216, 216);
+      border-bottom: 1.5px solid $darkgray;
       width: 90%;
       margin: auto;
       .nav-menu {
         .nav-link {
           text-decoration: none;
           padding: 0 2rem;
-          color: aliceblue;
+          color: $white;
           font-size: 1.8rem;
-          letter-spacing: 0.2rem;
+          letter-spacing: $spacing;
           &:hover {
-            color: #30bee0;
-            transition: all 0.3s linear;
+            color: $blue;
+            transition: $anim;
           }
         }
       }
       h1 {
         font-size: 2.5rem;
         letter-spacing: 0.2rem;
-        color: rgb(219, 216, 216);
+        color: $gray;
       }
       .icons {
-        color: rgb(203, 199, 199);
+        color: $gray;
         display: none;
       }
     }
@@ -50,21 +66,21 @@
     padding-left: 3rem;
     h4 {
       font-size: 2.5rem;
-      letter-spacing: 0.3rem;
+      letter-spacing: $spacing;
       line-height: 3.1rem;
-      color: rgb(219, 216, 216);
+      color: $gray;
       margin: 1.9rem 0;
       font-weight: 450;
       span {
-        color: #30bee0;
+        color: $blue;
         font-size: 2.8rem;
       }
     }
     p {
       font-size: 1.8rem;
       line-height: 3.1rem;
-      letter-spacing: 0.2rem;
-      color: rgb(219, 216, 216);
+      letter-spacing: $spacing;
+      color: $gray;
       margin: 0.7rem 0;
     }
   }
@@ -72,23 +88,21 @@
     button {
       background: transparent;
       outline: none;
-      border: 1.5px solid rgb(203, 199, 199);
+      border: 1.5px solid $gray;
       text-transform: capitalize;
       padding: 1rem 3rem;
-      letter-spacing: 0.3rem;
+      letter-spacing: $spacing;
       font-size: 2rem;
       border-radius: 3rem;
-      color: rgb(203, 199, 199);
+      color: $gray;
       margin-left: 13rem;
       &:hover {
-        color: #30bee0;
-        border: 1.5px solid #30bee0;
+        color: $blue;
+        border: 1.5px solid $blue;
         cursor: pointer;
-        transition: all 0.3s linear;
+        transition: $anim;
         transform: translateY(-3px);
-        box-shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
-          rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
-          rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
+        box-shadow: $shadow;
       }
     }
   }
@@ -109,11 +123,9 @@
     .benefit {
       background-color: rgba(75, 75, 75, 0.25);
       backdrop-filter: blur(35px);
-      -webkit-backdrop-filter: blur(35px);
-      border: 0.994318px solid rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.18);
       border-radius: 11px;
-      -webkit-border-radius: 11px;
-      color: rgb(128, 128, 128);
+      color: $darkgray;
       width: 42%;
       height: 30vh;
       margin: 2rem 1rem;
@@ -125,26 +137,28 @@
       &:hover {
         transform: translateY(-5px);
         cursor: pointer;
-        transition: all 0.3s linear;
-        border: 1px solid #30bee0;
-        box-shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
-          rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
-          rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
+        transition: $anim;
+        border: 1px solid $blue;
+        box-shadow: $shadow;
       }
       h2 {
-        color: rgb(219, 216, 216);
-        letter-spacing: 0.2rem;
-        text-align: center;
-        text-transform: capitalize;
-        font-weight: 450;
-        font-size: 1.8rem;
+        color: $gray;
+        letter-spacing: $spacing;
+        text : {
+          align: center;
+          transform: capitalize;
+        }
+        font : {
+          weight: 450;
+          size: 1.8rem;
+        }
         .benefit-icon {
           font-size: 2.5rem;
           padding-right: 1rem;
-          color: #f98213;
+          color: $orange;
         }
         span {
-          color: #30bee0;
+          color: $blue;
           font-size: 3rem;
         }
       }
@@ -157,10 +171,12 @@
 .containers {
   h3 {
     text-align: center;
-    color: #ccc;
-    font-size: 4rem;
-    font-weight: lighter;
-    letter-spacing: 0.3rem;
+    color: $gray;
+    font : {
+      size: 4rem;
+      weight: lighter;
+    }
+    letter-spacing: $spacing;
   }
   .course-cards {
     min-height: 100vh;
@@ -173,7 +189,6 @@
     .card {
       width: 29%;
       margin: 3rem 0;
-
       img {
         border-radius: 0.2rem;
         width: 100%;
@@ -188,29 +203,27 @@
           font-size: 2rem;
           letter-spacing: 0.2rem;
           text-transform: uppercase;
-          color: #dee1e2;
+          color: $gray;
         }
         button {
           margin: 1rem 0;
           padding: 0.8rem 1.8rem;
-          letter-spacing: 0.2rem;
+          letter-spacing: $spacing;
           font-size: 1.5rem;
           text-transform: capitalize;
-          color: #ccc;
+          color: $gray;
           background: transparent;
-          border: 1px solid #ccc;
+          border: 1px solid $gray;
           border-radius: 0.2rem;
           &:hover {
-            color: #30bee0;
+            color: $blue;
             cursor: pointer;
-            transition: all 0.3s linear;
-            border: 1px solid #30bee0;
-            box-shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
-              rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
-              rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
+            transition: $anim;
+            border: 1px solid $blue;
+            box-shadow: $shadow;
           }
           &:active {
-            transition: all 0.2s linear;
+            transition: $anim;
             box-shadow: none;
           }
         }
@@ -218,7 +231,7 @@
       .line {
         width: 100%;
         height: 0.3rem;
-        background-color: #30bee0;
+        background-color: $blue;
       }
     }
   }
@@ -232,7 +245,7 @@
   .coursepage {
     .courses-container {
       nav {
-        border-bottom: 1.5px solid rgb(219, 216, 216);
+        border-bottom: 1.5px solid $gray;
         width: 90%;
         margin: auto;
         .nav-menu {
@@ -242,8 +255,8 @@
         }
         h1 {
           font-size: 2.8rem;
-          letter-spacing: 0.3rem;
-          color: rgb(219, 216, 216);
+          letter-spacing: $spacing;
+          color: $gray;
         }
         .icons {
           font-size: 2.5rem;
@@ -314,7 +327,7 @@
   .coursepage {
     .courses-container {
       nav {
-        border-bottom: 1.5px solid rgb(219, 216, 216);
+        border-bottom: 1.5px solid $gray;
         width: 90%;
         margin: auto;
         .nav-menu {
@@ -324,8 +337,8 @@
         }
         h1 {
           font-size: 2.8rem;
-          letter-spacing: 0.3rem;
-          color: rgb(219, 216, 216);
+          letter-spacing: $spacing;
+          color: $gray;
         }
         .icons {
           font-size: 2.5rem;

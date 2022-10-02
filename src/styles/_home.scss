@@ -1,8 +1,23 @@
+// Sass Variables
+$blue: #30bee0;
+$gray: rgb(221, 220, 220);
+$orange: rgb(247, 129, 56);
+$anim: all 0.3s linear;
+$spacing: 0.2rem;
+$radius: 0.4rem;
+$shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
+  rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
+  rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
+$blueborder: 1.1px solid #30bee0;
+// Sass Variables
+
 .home {
-  background-image: url("../imgs/homeWorld.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: {
+    image: url("../imgs/homeWorld.jpg");
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+  }
 }
 .home-container {
   height: 100vh;
@@ -20,14 +35,16 @@
     left: 50%;
     transform: translate(-50%, 35%);
     h1 {
-      color: rgb(203, 199, 199);
+      color: $gray;
       text-transform: capitalize;
-      letter-spacing: 0.2rem;
-      font-size: 3rem;
-      font-weight: 500;
+      letter-spacing: $spacing;
+      font: {
+        size: 3rem;
+        weight: 500;
+      }
       text-align: center;
       span {
-        color: rgb(247, 129, 56);
+        color: $orange;
         font-size: 2.5rem;
       }
     }
@@ -35,23 +52,21 @@
       button {
         background: transparent;
         outline: none;
-        border: 1.5px solid rgb(203, 199, 199);
+        border: 1.5px solid $gray;
         text-transform: capitalize;
         padding: 1.2rem 3rem;
-        letter-spacing: 0.2rem;
+        letter-spacing: $spacing;
         font-size: 2rem;
-        border-radius: 3rem;
-        color: rgb(203, 199, 199);
+        border-radius: 4rem;
+        color: $gray;
         margin: 3rem 0;
         &:hover {
-          border: 1.5px solid #30bee0;
-          color: #30bee0;
+          border: $blueborder;
+          color: $blue;
           cursor: pointer;
-          transition: all 0.3s linear;
+          transition: $anim;
           transform: translateY(-3px);
-          box-shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
-            rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
-            rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
+          box-shadow: $shadow;
         }
       }
     }
@@ -72,8 +87,8 @@
         left: 5%;
         font-size: 2.6rem;
         display: block;
-        border-bottom: 1.5px solid rgb(203, 199, 199);
-        color: rgb(203, 199, 199);
+        border-bottom: 1.5px solid $gray;
+        color: $gray;
         padding-bottom: 1rem;
         width: 90%;
       }
@@ -93,14 +108,16 @@
         width: 90%;
         margin: 0 auto;
         h1 {
-          color: rgb(203, 199, 199);
+          color: $gray;
           text-transform: capitalize;
-          letter-spacing: 0.2rem;
-          font-size: 3.5rem;
-          font-weight: 500;
+          letter-spacing: $spacing;
+          font: {
+            size: 3.5rem;
+            weight: 500;
+          }
           text-align: center;
           span {
-            color: rgb(234, 129, 0);
+            color: $orange;
           }
         }
         .btn {
@@ -127,8 +144,8 @@
         left: 5%;
         font-size: 2.6rem;
         display: block;
-        border-bottom: 1.5px solid rgb(203, 199, 199);
-        color: rgb(203, 199, 199);
+        border-bottom: 1.5px solid $gray;
+        color: $gray;
         padding-bottom: 1rem;
         width: 90%;
       }
@@ -148,14 +165,16 @@
         width: 90%;
         margin: 0 auto;
         h1 {
-          color: rgb(203, 199, 199);
+          color: $gray;
           text-transform: capitalize;
-          letter-spacing: 0.2rem;
-          font-size: 3.5rem;
-          font-weight: 500;
+          letter-spacing: $spacing;
+          font: {
+            size: 3.5rem;
+            weight: 500;
+          }
           text-align: center;
           span {
-            color: rgb(234, 129, 0);
+            color: $orange;
           }
         }
         .btn {

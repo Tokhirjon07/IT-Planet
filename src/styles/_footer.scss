@@ -1,3 +1,18 @@
+// Sass Variables
+$blue: #30bee0;
+$gray: rgb(221, 220, 220);
+$white: aliceblue;
+$darkgray: rgb(135, 135, 135);
+$light: #f0f5f7;
+
+$anim: all 0.3s linear;
+$spacing: 0.2rem;
+$radius: 0.4rem;
+$darker: rgba(255, 255, 255, 0.18);
+$scale: scale(1.1);
+$blueborder: 1.1px solid #30bee0;
+// Sass Variables
+
 .footer {
   width: 100%;
   padding: 1rem 4%;
@@ -5,10 +20,10 @@
   min-height: 80vh;
   background-color: rgba(39, 37, 37, 0.25);
   backdrop-filter: blur(20px);
-  border: 0.994318px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid $darker;
   &:hover {
-    border-top: 0.1rem solid #30bee0;
-    transition: all 0.4s linear;
+    border-top: $blueborder;
+    transition: $anim;
   }
   .footer-container {
     display: flex;
@@ -19,10 +34,10 @@
       width: 30%;
       h3 {
         font-size: 2.2rem;
-        color: #dee1e2;
+        color: $light;
         text-transform: capitalize;
         margin: 2rem 0;
-        letter-spacing: 0.2rem;
+        letter-spacing: $spacing;
       }
       .links {
         display: flex;
@@ -38,14 +53,14 @@
             align-items: center;
             text-align: center;
             background-color: rgb(67, 67, 67);
-            color: #f0f5f7;
+            color: $light;
             width: 3.7rem;
             height: 3.7rem;
             border-radius: 50%;
             &:hover {
-              border: 2px solid #30bee0;
-              transition: all 0.3s linear;
-              transform: scale(1.1);
+              border: 2px solid $blue;
+              transition: $anim;
+              transform: $scale;
             }
           }
         }
@@ -57,22 +72,22 @@
       width: 30%;
       h3 {
         font-size: 2.2rem;
-        color: #dee1e2;
+        color: $light;
         text-transform: capitalize;
         margin: 2rem 0;
-        letter-spacing: 0.2rem;
+        letter-spacing: $spacing;
       }
       a {
         font-size: 1.7rem;
-        color: #ccc;
+        color: $gray;
         text-decoration: none;
-        letter-spacing: 0.1rem;
+        letter-spacing: $spacing;
         padding: 0.8rem 0;
         text-transform: capitalize;
         &:hover {
-          color: #30bee0;
-          transition: all 0.4s linear;
-          border-bottom: 2px solid #30bee0;
+          color: $blue;
+          transition: $anim;
+          border-bottom: $blueborder;
           padding-bottom: 0.5rem;
           width: 25%;
         }
@@ -82,22 +97,22 @@
       width: 30%;
       h3 {
         font-size: 2.2rem;
-        color: #dee1e2;
+        color: $light;
         text-transform: capitalize;
         margin: 2rem 0;
-        letter-spacing: 0.2rem;
+        letter-spacing: $spacing;
       }
       p {
         font-size: 1.8rem;
-        color: #ccc;
+        color: $gray;
         padding: 0.6rem 0;
         .icon {
           padding-right: 2rem;
           font-size: 2.1rem;
         }
         &:hover {
-          color: #30bee0;
-          transition: all 0.3s linear;
+          color: $blue;
+          transition: $anim;
         }
       }
     }
@@ -109,11 +124,11 @@
   p {
     margin: 2rem 0;
     font-size: 1.2rem;
-    color: #dee1e2;
-    letter-spacing: 0.2rem;
+    color: $light;
+    letter-spacing: $spacing;
     span {
       text-transform: uppercase;
-      color: #30bee0;
+      color: $blue;
     }
   }
 }
@@ -161,11 +176,7 @@
         }
         p {
           font-size: 1.8rem;
-          color: #ccc;
-          // .footer-icon {
-          //   padding-left: 2rem;
-          //   font-size: 2rem;
-          // }
+          color: $gray;
         }
       }
     }

@@ -1,9 +1,22 @@
+// Sass Variables
+$blue: #30bee0;
+$gray: rgb(203, 199, 199);
+$white: aliceblue;
+$darkgray: rgb(135, 135, 135);
+$orange: rgb(247, 129, 56);
+$anim: all 0.3s linear;
+$spacing: 0.2rem;
+$radius: 0.4rem;
+// Sass Variables[
+
 .contactpage {
-  background-image: url("../imgs/homeWorld.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: {
+    image: url("../imgs/homeWorld.jpg");
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+    attachment: fixed;
+  }
   .contact {
     height: 100vh;
     nav {
@@ -11,29 +24,29 @@
       justify-content: space-between;
       align-items: center;
       padding: 1.7rem 1% 0.5rem 1%;
-      border-bottom: 1.5px solid rgb(219, 216, 216);
+      border-bottom: 1.5px solid $darkgray;
       width: 90%;
       margin: auto;
       .nav-menu {
         .nav-link {
           text-decoration: none;
           padding: 0 2rem;
-          color: aliceblue;
+          color: $white;
           font-size: 1.8rem;
-          letter-spacing: 0.2rem;
+          letter-spacing: $spacing;
           &:hover {
-            color: #30bee0;
-            transition: all 0.3s linear;
+            color: $blue;
+            transition: $anim;
           }
         }
       }
       h1 {
         font-size: 2.5rem;
-        letter-spacing: 0.2rem;
-        color: rgb(219, 216, 216);
+        letter-spacing: $spacing;
+        color: $gray;
       }
       .icons {
-        color: rgb(203, 199, 199);
+        color: $gray;
         display: none;
       }
     }
@@ -43,16 +56,16 @@
       width: 50%;
       background-color: rgb(64, 63, 63);
       padding: 1rem;
-      border-radius: 0.4rem;
+      border-radius: $radius;
       h2 {
         text-align: center;
-        color: aliceblue;
+        color: $white;
         text-transform: uppercase;
         font-size: 3rem;
-        letter-spacing: 0.3rem;
+        letter-spacing: $spacing;
         margin: 2rem 0;
         span {
-          color: #f98213;
+          color: $orange;
           font-size: 3.5rem;
         }
       }
@@ -68,28 +81,28 @@
             left: 5%;
             font-size: 1.8rem;
             text-align: center;
-            color: #f98213;
+            color: $orange;
             padding: 0 1rem;
           }
           input {
             width: 90%;
-            color: aliceblue;
+            color: $white;
             background: transparent;
             margin: 1.5rem 1rem;
             padding: 1.2rem 2rem 1.2rem 4rem;
             font-size: 1.6rem;
             text-transform: capitalize;
-            letter-spacing: 0.5rem;
+            letter-spacing: $spacing;
             outline: none;
-            border: 1px solid #30bee0;
-            border-radius: 0.2rem;
+            border: 1px solid $blue;
+            border-radius: $radius;
           }
           input::placeholder {
-            color: aliceblue;
+            color: $white;
           }
           input:focus {
-            transition: all 0.2s linear;
-            box-shadow: 1px 2px #30bee0;
+            transition: $anim;
+            box-shadow: 1px 2px $blue;
           }
           input:hover {
             cursor: pointer;
@@ -104,22 +117,22 @@
     margin-bottom: 3rem;
     button {
       padding: 1.1rem 4rem;
-      letter-spacing: 0.3rem;
+      letter-spacing: $spacing;
       font-size: 1.7rem;
       text-transform: capitalize;
       background: transparent;
-      border: 1px solid #30bee0;
+      border: 1px solid $blue;
       border-radius: 0.3rem;
-      color: aliceblue;
+      color: $white;
       .info-icon {
         padding-right: 1rem;
         font-size: 1.3rem;
       }
       &:hover {
-        color: #30bee0;
-        border: 1.5px solid #30bee0;
+        color: $blue;
+        border: 1.5px solid $blue;
         transform: translateY(-5px);
-        transition: all 0.4s linear;
+        transition: $anim;
         box-shadow: rgba(142, 141, 141, 0.4) 0px 2px 4px,
           rgba(172, 170, 170, 0.3) 0px 7px 13px -3px,
           rgba(167, 165, 165, 0.2) 0px -3px 0px inset;
