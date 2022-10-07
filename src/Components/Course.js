@@ -13,6 +13,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 // Font Awesome
 
+// Pages Section
+
+// Pages Section
+
 const Course = ({ lessons }) => {
   useEffect(() => {
     Aos.init({ duration: 1000 });

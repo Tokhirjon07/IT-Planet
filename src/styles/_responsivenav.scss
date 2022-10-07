@@ -1,46 +1,38 @@
 // Sass Variables
-$blue: #30bee0;
-$gray: rgb(221, 220, 220);
 $white: aliceblue;
-$darkgray: rgb(135, 135, 135);
-$orange: rgb(247, 129, 56);
 $anim: all 0.3s linear;
 $spacing: 0.2rem;
-$radius: 0.4rem;
-$shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
-  rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
-  rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
-$darker: rgba(255, 255, 255, 0.18);
-$scale: scale(1.1);
-$blueborder: 1.1px solid #30bee0;
+$darker: rgba(46, 44, 44, 0.18);
 // Sass Variables
 
 .reponsivenav {
-  background-color: rgba(89, 89, 89, 0.25);
+  background-color: $darker;
   backdrop-filter: blur(17.5px);
-  border-right: 1px solid rgba(255, 255, 255, 0.18);
-  color: rgb(128, 128, 128);
+  color: $darkgray;
   position: absolute;
-  top: 13%;
+  top: 12%;
   width: 75%;
   height: 100vh;
   z-index: 100;
-  border-top-right-radius: 0.3rem;
-  border-bottom-right-radius: 0.5rem;
+  border: {
+    right: 1px solid $darker;
+    top-right-radius: $spacing;
+    bottom-right-radius: $spacing;
+  }
   .navbar {
     display: flex;
     flex-direction: column;
     .link {
       text-decoration: none;
-      color: #fff;
+      color: $white;
       font-size: 2rem;
       text-transform: uppercase;
-      letter-spacing: 0.2rem;
+      letter-spacing: $spacing;
       line-height: 2.5rem;
       padding: 2.1rem 5rem;
       &:hover {
         border-left: 2px solid red;
-        transition: all 0.5s linear;
+        transition: $anim;
       }
     }
   }

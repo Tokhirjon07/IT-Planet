@@ -19,6 +19,7 @@ import { motion } from "framer-motion";
 // Pages Section
 import Fullinfo from "./Fullinfo";
 import Footer from "./Footer";
+import Top from "./TopCompanies";
 // Pages Section
 
 const Details = () => {
@@ -93,18 +94,22 @@ const Details = () => {
               })}
               <div className="promises">
                 <div data-aos="zoom-in" className="promise">
-                  <h3>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Modi voluptatem labore non dicta similique aspernatur?
-                  </h3>
+                  <h2>
+                    OUR GRADUATES WORK <span>AT THESE COMPANIES</span>
+                    <span>and 300+ more great tech companies! </span>
+                  </h2>
                 </div>
                 <div data-aos="zoom-in" className="promise">
                   <h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quae, laboriosam voluptatibus id numquam soluta alias?
+                    We teach and employ globally. Currently, we have students,
+                    graduates, and colleagues in
+                    <span>
+                      Europe, Asia, Africa, the USA, Canada, and Australia.
+                    </span>
                   </h3>
                 </div>
               </div>
+              <Top />
               <Footer />
             </motion.div>
           )}

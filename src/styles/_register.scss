@@ -1,0 +1,211 @@
+// Sass Variables
+$blue: #30bee0;
+$gray: rgb(221, 220, 220);
+$white: aliceblue;
+$darkgray: rgb(135, 135, 135);
+$orange: rgb(247, 129, 56);
+$anim: all 0.3s linear;
+$spacing: 0.2rem;
+$radius: 0.4rem;
+$shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
+  rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
+  rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
+$darker: rgba(255, 255, 255, 0.18);
+$scale: scale(1.1);
+$blueborder: 1.1px solid #30bee0;
+// Sass Variables
+
+.register {
+  width: 100%;
+  height: 80vh;
+  border-radius: $radius;
+  display: flex;
+  justify-content: center;
+  padding: 1.3rem 0;
+  margin-bottom: 2rem;
+  .form-close-btn {
+    button {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      font-size: 1.7rem;
+      border: none;
+      background-color: transparent;
+      &:hover {
+        cursor: pointer;
+        color: red;
+        transform: scale(1.2);
+        transition: $anim;
+      }
+    }
+  }
+  .form {
+    background-color: rgb(48, 46, 46);
+    padding: 1.5rem 3rem;
+    width: 50%;
+    border-radius: $radius;
+    h2 {
+      padding: 1.7rem 0;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .user-intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 1rem;
+        width: 100%;
+        input {
+          outline: none;
+          border: none;
+          width: 100%;
+          padding: 0.6rem 1rem;
+          letter-spacing: $spacing;
+          font-size: 1.3rem;
+          text-transform: capitalize;
+          background: linear-gradient(
+            rgb(204, 204, 204),
+            rgb(243, 242, 242),
+            #ccc
+          );
+        }
+      }
+      .user-location {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin: 1.5rem 0;
+        input {
+          outline: none;
+          border: none;
+          width: 100%;
+          margin: 0 auto;
+          letter-spacing: $spacing;
+          padding: 0.6rem 1rem;
+          font-size: 1.3rem;
+          text-transform: capitalize;
+          background: linear-gradient(
+            rgb(204, 204, 204),
+            rgb(243, 242, 242),
+            #ccc
+          );
+        }
+      }
+      .user-choosen-course {
+        display: flex;
+        justify-content: center;
+        div {
+          width: 95%;
+          select {
+            outline: none;
+            border: none;
+            width: 100%;
+            margin: 0 auto;
+            letter-spacing: $spacing;
+            padding: 0.6rem .9rem;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            background: linear-gradient(
+              rgb(204, 204, 204),
+              rgb(243, 242, 242),
+              #ccc
+            );
+            color:rgb(87, 85, 85);
+          }
+        }
+      }
+      .user-data {
+        width: 95%;
+        margin: 1.3rem auto;
+        input {
+          outline: none;
+          border: none;
+          width: 100%;
+          padding: 0.6rem 1rem;
+          letter-spacing: $spacing;
+          font-size: 1.3rem;
+          text-transform: capitalize;
+          margin: 0.8rem 0;
+          background: linear-gradient(
+            rgb(204, 204, 204),
+            rgb(243, 242, 242),
+            #ccc
+          );
+        }
+      }
+      .register-confirm {
+        padding-left: 1rem;
+        .reg-term {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 1.5rem 0;
+          input {
+            margin-right: 1rem;
+          }
+          p {
+            font-size: 1.3rem;
+            span {
+              color: $blue;
+              text-decoration: underline;
+              &:hover {
+                cursor: pointer;
+                color: #1387a4;
+                transition: $anim;
+              }
+            }
+          }
+        }
+        .reg-btns {
+          .btn {
+            padding: 0.4rem 2rem;
+            letter-spacing: $spacing;
+            text-transform: capitalize;
+            font-size: 1.6rem;
+            margin-right: 1rem;
+            border: none;
+            border-radius: $radius;
+            &:hover {
+              cursor: pointer;
+              transition: $anim;
+            }
+          }
+          button:nth-child(1) {
+            background: linear-gradient(red, rgb(145, 31, 31), red);
+            color: $white;
+            &:hover {
+              background: linear-gradient(
+                rgb(171, 53, 53),
+                rgb(239, 18, 18),
+                rgb(185, 1, 1)
+              );
+              transition: $anim;
+            }
+            &:active {
+              transform: scale(1.1);
+            }
+          }
+          button:nth-child(2) {
+            background: linear-gradient(
+              rgb(111, 180, 7),
+              rgb(68, 108, 8),
+              rgb(143, 199, 60)
+            );
+            color: $white;
+            &:hover {
+              background: linear-gradient(
+                rgb(70, 113, 4),
+                rgb(127, 196, 23),
+                rgb(72, 112, 13)
+              );
+              transition: all 4s linear;
+            }
+          }
+        }
+      }
+    }
+  }
+}

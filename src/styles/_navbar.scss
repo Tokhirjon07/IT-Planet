@@ -1,18 +1,11 @@
 // Sass Variables
 $blue: #30bee0;
 $gray: rgb(221, 220, 220);
-$white: aliceblue;
-$darkgray: rgb(135, 135, 135);
-$orange: rgb(247, 129, 56);
 $anim: all 0.3s linear;
 $spacing: 0.2rem;
 $radius: 0.4rem;
-$shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
-  rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
-  rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
-$darker: rgba(255, 255, 255, 0.18);
-$scale: scale(1.1);
-$blueborder: 1.1px solid #30bee0;
+$shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+  rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 // Sass Variables
 
 .nav {
@@ -25,25 +18,28 @@ $blueborder: 1.1px solid #30bee0;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(225, 220, 220);
+    background-color: $gray;
     width: 65%;
     margin: 0 auto;
     padding: 1.8rem 0;
-    border-radius: 0.4rem;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: $radius;
+    box-shadow: $shadow;
     .link {
       padding: 0 2rem;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-size: 1.8rem;
-      letter-spacing: 0.2rem;
-      font-weight: 500;
+      color: #2c2b2b;
+      font : {
+        weight: 500;
+        size: 1.8rem;
+      }
+      text : {
+        transform: uppercase;
+        decoration: none;
+      }
+      letter-spacing: $spacing;
 
       &:hover {
-        color: rgb(30, 82, 164);
-        transition: all 0.3s linear;
+        color: rgb(57, 29, 110);
+        transition: $anim;
       }
     }
     .leftline {

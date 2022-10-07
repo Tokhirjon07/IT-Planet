@@ -1,5 +1,5 @@
 // React And Hooks
-import React from "react";
+import React, { useState } from "react";
 // React And Hooks
 
 // Font Awesome
@@ -17,10 +17,17 @@ import {
 import { useHistory } from "react-router-dom";
 // Extra Library
 
+// Pages Section
+import Register from "../Components/Register";
+// Pages Section
+
 const Fullinfo = ({ info }) => {
   const history = useHistory();
+  const [modal, setModal] = useState(false);
   return (
     <div className="details detail">
+      {modal ? <Register modal={modal} setModal={setModal} /> : ""}
+
       <h4>
         <FontAwesomeIcon className="info-icon" icon={faGlobe} />
         {info.status}
@@ -63,11 +70,7 @@ const Fullinfo = ({ info }) => {
           <FontAwesomeIcon className="info-icon" icon={faChevronLeft} />
           Contact
         </button>
-        <button
-          onClick={() => {
-            history.push("/contactpage");
-          }}
-        >
+        <button onClick={() => setModal(!modal)}>
           <FontAwesomeIcon className="info-icon" icon={faChevronLeft} />
           Register
         </button>
