@@ -13,6 +13,7 @@ import HomePage from "../Pages/HomePage";
 import CoursesPage from "../Pages/CoursesPage";
 import ErrorPage from "../Pages/ErrorPage";
 import Details from "./Details";
+import AboutPage from "../Pages/AboutPage";
 import ContactPage from "../Pages/ContactPage";
 import data from "./Data";
 // Pages Section
@@ -32,6 +33,9 @@ const App = () => {
           </Route>
           <Route path="/coursespage/:id">
             <Details />
+          </Route>
+          <Route path="/aboutpage">
+            <AboutPage />
           </Route>
           <Route path="/contactpage">
             <ContactPage />

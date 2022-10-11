@@ -28,17 +28,16 @@ const ContactPage = () => {
   const [bg, setBg] = useState(false);
   const [loading, setLoading] = useState(false);
   const style = {
-    background: bg
-      ? "linear-gradient(95deg, rgba(35, 185, 212, 0.6),  rgba(25, 107, 222, 0.7), rgba(13, 205, 222, 0.6))"
-      : "rgba(0,0,0,0.6)",
+    background: bg ? "" : "rgba(0,0,0,0.6)",
   };
+  // "linear-gradient(95deg, rgba(35, 185, 212, 0.6),  rgba(25, 107, 222, 0.7), rgba(13, 205, 222, 0.6))"
   useEffect(() => {
     setLoading(true);
     setBg(true);
     setTimeout(() => {
       setLoading(false);
       setBg(false);
-    }, 700);
+    }, 900);
   }, []);
   // Loading
 
@@ -72,10 +71,13 @@ const ContactPage = () => {
                   Home
                 </Link>
                 <Link className="nav-link" to="/coursespage">
-                  Courses
+                  IT Courses
+                </Link>
+                <Link className="nav-link" to="/aboutpage">
+                  IT Planet
                 </Link>
                 <Link className="nav-link" to="/contactpage">
-                  Contact
+                  Contact Us
                 </Link>
               </div>
               <div className="icons">

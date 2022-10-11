@@ -41,9 +41,7 @@ const Details = () => {
   const [loading, setLoading] = useState(true);
   const [bg, setBg] = useState(true);
   const styles = {
-    background: bg
-      ? "linear-gradient(95deg, rgba(35, 185, 212, 0.6),  rgba(25, 107, 222, 0.7), rgba(13, 205, 222, 0.6))"
-      : "rgba(0,0,0,0.3)",
+    background: bg ? "" : "rgba(0,0,0,0.3)",
   };
   useEffect(() => {
     setLoading(true);

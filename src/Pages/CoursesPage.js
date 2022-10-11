@@ -29,13 +29,11 @@ const CoursesPage = ({ lessons }) => {
     setTimeout(() => {
       setLoading(false);
       setBg(false);
-    }, 700);
+    }, 900);
   }, []);
 
   const styles = {
-    background: bg
-      ? "linear-gradient(95deg, rgba(35, 185, 212, 0.6),  rgba(25, 107, 222, 0.7), rgba(13, 205, 222, 0.6))"
-      : "",
+    background: bg ? "" : "",
   };
 
   const [menu, setMenu] = useState(false);
@@ -74,10 +72,13 @@ const CoursesPage = ({ lessons }) => {
                 Home
               </Link>
               <Link className="nav-link" to="/coursespage">
-                Courses
+                IT Courses
+              </Link>
+              <Link className="nav-link" to="/aboutpage">
+                IT Planet
               </Link>
               <Link className="nav-link" to="/contactpage">
-                Contact
+                Contact Us
               </Link>
             </div>
             <div className="icons">

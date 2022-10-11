@@ -57,7 +57,7 @@ $blueborder: 1.1px solid #30bee0;
         padding: 1.2rem 3rem;
         letter-spacing: $spacing;
         font-size: 2rem;
-        border-radius: 4rem;
+        border-radius: $radius;
         color: $gray;
         margin: 3rem 0;
         &:hover {

@@ -1,0 +1,163 @@
+// Sass Variables
+$blue: #30bee0;
+$gray: rgb(221, 220, 220);
+$orange: rgb(247, 129, 56);
+$anim: all 0.3s linear;
+$spacing: 0.2rem;
+$radius: 0.4rem;
+$shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
+  rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
+  rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
+$blueborder: 1.1px solid #30bee0;
+// Sass Variables
+$white: aliceblue;
+$darkgray: rgb(202, 198, 198);
+// Sass Variables
+
+.about {
+  background: {
+    image: url("../imgs/homeWorld.jpg");
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+    attachment: fixed;
+  }
+  .about-container {
+    min-height: 100vh;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.7rem 1% 0.5rem 1%;
+      border-bottom: 1.5px solid $darkgray;
+      width: 90%;
+      margin: auto;
+      .nav-menu {
+        .nav-link {
+          text-decoration: none;
+          padding: 0 2rem;
+          color: $white;
+          font-size: 1.8rem;
+          letter-spacing: $spacing;
+          &:hover {
+            color: $blue;
+            transition: $anim;
+          }
+        }
+      }
+      h1 {
+        font-size: 2.5rem;
+        letter-spacing: $spacing;
+        color: $gray;
+      }
+      .icons {
+        color: $gray;
+        display: none;
+      }
+    }
+    .about-hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 2%;
+      width: 90%;
+      margin: 3rem auto 0rem auto;
+      .firstmodal {
+        // display: none;
+      }
+      .more-info {
+        padding: 3rem 2rem;
+        h1 {
+          color: $gray;
+          font-size: 6.5rem;
+          text-transform: capitalize;
+          letter-spacing: $spacing;
+          font-weight: 300;
+        }
+        p {
+          color: $gray;
+          font-size: 2.2rem;
+          letter-spacing: $spacing;
+          padding: 2rem 0;
+        }
+        button {
+          background: transparent;
+          outline: none;
+          text-align: center;
+          border: 1.5px solid $gray;
+          text-transform: capitalize;
+          padding: 1.1rem 3rem;
+          letter-spacing: $spacing;
+          font-size: 2rem;
+          border-radius: $radius;
+          color: $gray;
+          margin: 1rem 0;
+          .button-icon {
+            padding-left: 1rem;
+          }
+          &:hover {
+            border: $blueborder;
+            color: $blue;
+            cursor: pointer;
+            transition: $anim;
+            transform: translateY(-3px);
+            box-shadow: $shadow;
+          }
+        }
+      }
+      .secondmodal {
+        // display: block;
+      }
+      .aboutus {
+        display: none;
+        padding: 3.5rem 0rem 0rem 1rem;
+        h2 {
+          color: $white;
+          line-height: 3.2rem;
+          font-size: 2.2rem;
+          letter-spacing: $spacing;
+          font-weight: 500;
+        }
+        p {
+          line-height: 3rem;
+          color: $gray;
+          font-size: 1.8rem;
+          letter-spacing: $spacing;
+          padding: 2rem 0;
+        }
+        button {
+          background: transparent;
+          outline: none;
+          text-align: center;
+          border: 1.5px solid $gray;
+          text-transform: capitalize;
+          padding: 1.1rem 3rem;
+          letter-spacing: $spacing;
+          font-size: 2rem;
+          border-radius: $radius;
+          color: $gray;
+          margin: 1rem 0;
+          .button-icon {
+            padding-left: 1rem;
+          }
+          &:hover {
+            border: $blueborder;
+            color: $blue;
+            cursor: pointer;
+            transition: $anim;
+            transform: translateY(-3px);
+            box-shadow: $shadow;
+          }
+        }
+      }
+      .image-section {
+        img {
+          height: 76vh;
+          &:hover {
+            cursor: zoom-in;
+          }
+        }
+      }
+    }
+  }
+}

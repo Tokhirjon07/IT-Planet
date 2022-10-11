@@ -23,25 +23,28 @@ body {
       width: 140px;
       height: 120px;
       animation: rt 6s infinite linear;
-      box-shadow: 0 0 1px 0 blueviolet, inset 0 0 10px 0 blueviolet;
+      box-shadow: 0 0 1px 0 rgb(18, 153, 236),
+        inset 0 0 10px 0 rgb(22, 128, 242);
     }
     &:nth-of-type(2) {
       width: 120px;
       height: 140px;
       animation: rt 10s infinite linear;
-      box-shadow: 0 0 1px 0 darkviolet, inset 0 0 10px 0 darkviolet;
+      box-shadow: 0 0 1px 0 rgb(4, 102, 181), inset 0 0 10px 0 rgb(57, 15, 246);
     }
     &:nth-of-type(3) {
       width: 150px;
       height: 130px;
       animation: rt 5s infinite linear;
-      box-shadow: 0 0 1px 0 darkmagenta, inset 0 0 10px 0 darkmagenta;
+      box-shadow: 0 0 1px 0 rgb(244, 11, 244),
+        inset 0 0 10px 0 rgb(241, 18, 241);
     }
     &:nth-of-type(4) {
       width: 130px;
       height: 150px;
       animation: rt 15s infinite linear;
-      box-shadow: 0 0 1px 0 magenta, inset 0 0 10px 0 magenta;
+      box-shadow: 0 0 1px 0 rgb(10, 207, 251),
+        inset 0 0 10px 0 rgb(100, 211, 245);
     }
   }
 }
