@@ -20,13 +20,13 @@ const ResponsiveNav = () => {
         <Link className="link" to="/coursespage">
           it courses
         </Link>
-        <Link className="link" to="/">
+        <Link className="link" to="/aboutpage">
           it planet
         </Link>
         <Link className="link" to="/contactpage">
           contact us
         </Link>
-        <Link className="link" to="/">
+        <Link className="link" to="/contactpage">
           sign in
         </Link>
       </div>

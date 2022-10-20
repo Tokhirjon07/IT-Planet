@@ -29,7 +29,7 @@ const CoursesPage = ({ lessons }) => {
     setTimeout(() => {
       setLoading(false);
       setBg(false);
-    }, 900);
+    }, 800);
   }, []);
 
   const styles = {
@@ -57,13 +57,11 @@ const CoursesPage = ({ lessons }) => {
       ) : (
         <div className="courses-container">
           <motion.nav
-            initial={{ y: -250 }}
-            animate={{ y: 5 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{
               duration: 1,
-              delay: 1,
-              type: "tween",
-              stiffness: 100,
+              delay: 0.8,
             }}
           >
             <h1>IT Planet</h1>

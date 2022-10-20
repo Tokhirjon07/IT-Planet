@@ -12,7 +12,7 @@ const Register = ({ modal, setModal }) => {
   const [loading, setLoading] = useState(true);
   const [bg, setBg] = useState(true);
   const styles = {
-    background: bg ? "" : "#ccc",
+    background: bg ? "" : "",
   };
   useEffect(() => {
     setLoading(true);
@@ -20,7 +20,7 @@ const Register = ({ modal, setModal }) => {
     setTimeout(() => {
       setLoading(false);
       setBg(false);
-    }, 2000);
+    }, 800);
   }, []);
   // Loading
 
@@ -35,13 +35,13 @@ const Register = ({ modal, setModal }) => {
         </div>
       ) : (
         <div style={styles} className="register">
-          <div className="form-close-btn">
-            <button onClick={() => setModal(!modal)}>
-              <FontAwesomeIcon icon={faX} />
-            </button>
-          </div>
           <div className="form">
-            <h2>Register new account</h2>
+            <div className="title">
+              <h2>Register new account</h2>
+              <button onClick={() => setModal(!modal)}>
+                <FontAwesomeIcon icon={faX} />
+              </button>
+            </div>
             <form>
               <div className="user-intro">
                 <div>

@@ -26,7 +26,7 @@ const Navbar = () => {
         <Link className="link leftline" to="/contactpage">
           contact us
         </Link>
-        <Link className="link leftline" to="/">
+        <Link className="link leftline" to="/contactpage">
           sign in
         </Link>
       </nav>

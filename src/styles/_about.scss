@@ -8,6 +8,9 @@ $radius: 0.4rem;
 $shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
   rgba(181, 180, 180, 0.3) 0px 7px 13px -3px,
   rgba(198, 196, 196, 0.2) 0px -3px 0px inset;
+$shadow2: rgba(222, 221, 221, 0.4) 0px 2px 4px,
+  rgba(209, 207, 207, 0.3) 0px 7px 13px -3px,
+  rgba(219, 216, 216, 0.2) 0px -3px 0px inset;
 $blueborder: 1.1px solid #30bee0;
 // Sass Variables
 $white: aliceblue;
@@ -59,58 +62,13 @@ $darkgray: rgb(202, 198, 198);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       padding: 4rem 2%;
       width: 90%;
       margin: 3rem auto 0rem auto;
-      .firstmodal {
-        // display: none;
-      }
-      .more-info {
-        padding: 3rem 2rem;
-        h1 {
-          color: $gray;
-          font-size: 6.5rem;
-          text-transform: capitalize;
-          letter-spacing: $spacing;
-          font-weight: 300;
-        }
-        p {
-          color: $gray;
-          font-size: 2.2rem;
-          letter-spacing: $spacing;
-          padding: 2rem 0;
-        }
-        button {
-          background: transparent;
-          outline: none;
-          text-align: center;
-          border: 1.5px solid $gray;
-          text-transform: capitalize;
-          padding: 1.1rem 3rem;
-          letter-spacing: $spacing;
-          font-size: 2rem;
-          border-radius: $radius;
-          color: $gray;
-          margin: 1rem 0;
-          .button-icon {
-            padding-left: 1rem;
-          }
-          &:hover {
-            border: $blueborder;
-            color: $blue;
-            cursor: pointer;
-            transition: $anim;
-            transform: translateY(-3px);
-            box-shadow: $shadow;
-          }
-        }
-      }
-      .secondmodal {
-        // display: block;
-      }
       .aboutus {
-        display: none;
         padding: 3.5rem 0rem 0rem 1rem;
+        width: 50%;
         h2 {
           color: $white;
           line-height: 3.2rem;
@@ -151,10 +109,363 @@ $darkgray: rgb(202, 198, 198);
         }
       }
       .image-section {
+        width: 50%;
         img {
           height: 76vh;
           &:hover {
             cursor: zoom-in;
+          }
+        }
+      }
+    }
+    .cofounders {
+      width: 90%;
+      padding: 2rem 0;
+      margin: 0 auto;
+      h1 {
+        text-align: center;
+        color: $white;
+        letter-spacing: $spacing;
+        padding: 5rem 0;
+        font : {
+          size: 4rem;
+          weight: 400;
+        }
+      }
+      .cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .card:nth-child(2) {
+          margin: 0 1rem;
+        }
+        .card {
+          border: $blueborder;
+          padding: 2rem;
+          width: 30%;
+          box-shadow: $shadow;
+          border-radius: $radius;
+          &:hover {
+            transform: translateY(-4px);
+            transition: $anim;
+            cursor: pointer;
+            box-shadow: $shadow2;
+          }
+          .card-img {
+            text-align: center;
+            img {
+              width: 100%;
+              border-radius: $radius;
+            }
+          }
+          .card-details {
+            h2 {
+              color: $white;
+              text-transform: capitalize;
+              font-size: 2.3rem;
+              padding: 2rem 0;
+              letter-spacing: $spacing;
+            }
+            h5 {
+              font-size: 1.7rem;
+              text-transform: capitalize;
+              color: $gray;
+              font-weight: 350;
+            }
+          }
+        }
+      }
+    }
+    .motto-section {
+      width: 90%;
+      margin: 5rem auto 10rem auto;
+      h2 {
+        text-align: center;
+        font-size: 4rem;
+        color: $white;
+        letter-spacing: $spacing;
+        font-weight: 400;
+        padding: 3rem 0;
+      }
+      .motto {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border: $blueborder;
+        margin: 3rem 0;
+        border-radius: $radius;
+        padding: 1.5rem 5rem 1.5rem 4rem;
+        box-shadow: $shadow;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 3rem;
+          border-bottom: 2px solid $blue;
+          padding: 0.4rem;
+        }
+        p {
+          color: $white;
+          font-size: 1.9rem;
+          font-style: italic;
+          font-family: monospace;
+          .quote-icon {
+            padding: 0 1rem;
+            color: $orange;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 550px) {
+  .about {
+    .about-container {
+      nav {
+        border-bottom: 1.5px solid $gray;
+        width: 90%;
+        margin: auto;
+        .nav-menu {
+          .nav-link {
+            display: none;
+          }
+        }
+        h1 {
+          font-size: 2.8rem;
+          letter-spacing: $spacing;
+          color: $gray;
+        }
+        .icons {
+          font-size: 2.5rem;
+          border-bottom: none;
+          display: block;
+        }
+      }
+
+      .about-hero {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem 2%;
+        margin: 1rem auto 0rem auto;
+        .aboutus {
+          width: 100%;
+          h2 {
+            // color: $white;
+          }
+          p {
+            // color: $gray;
+          }
+          button {
+            display: none;
+            padding: 1rem 2.5rem;
+            .button-icon {
+            }
+            &:hover {
+            }
+          }
+        }
+        .image-section {
+          width: 100%;
+          margin-top: 2rem;
+          img {
+            width: 100%;
+            &:hover {
+            }
+          }
+        }
+      }
+
+      .cofounders {
+        width: 90%;
+        padding: 2rem 0;
+        h1 {
+          font-size: 3.4rem;
+        }
+        .cards {
+          width: 100%;
+          justify-content: center;
+          .card:nth-child(2) {
+            margin: 4rem 0rem;
+          }
+          .card {
+            padding: 1.1rem 0;
+            width: 90%;
+            &:hover {
+            }
+            .card-img {
+              img {
+                width: 90%;
+              }
+            }
+            .card-details {
+              padding-left: 2rem;
+              h2 {
+                padding: 1rem 0;
+              }
+              h5 {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+      }
+
+      .motto-section {
+        width: 90%;
+        margin: 2rem auto;
+        h2 {
+          text-align: center;
+          font-size: 4rem;
+          color: $white;
+          padding-top: 3rem;
+        }
+        .motto {
+          width: 80%;
+          margin: 2rem auto;
+          flex-direction: column;
+          justify-content: center;
+          padding: 1.5rem 1rem;
+          img {
+            width: 85px;
+            height: 85px;
+          }
+          p {
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 1.7rem;
+            color: $gray;
+            .quote-icon {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) and (max-width: 700px) {
+  .about {
+    .about-container {
+      nav {
+        border-bottom: 1.5px solid $gray;
+        width: 90%;
+        margin: auto;
+        .nav-menu {
+          .nav-link {
+            display: none;
+          }
+        }
+        h1 {
+          font-size: 2.8rem;
+          letter-spacing: $spacing;
+          color: $gray;
+        }
+        .icons {
+          font-size: 2.5rem;
+          border-bottom: none;
+          display: block;
+        }
+      }
+
+      .about-hero {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem 2%;
+        margin: 1rem auto 0rem auto;
+        .aboutus {
+          width: 100%;
+          h2 {
+          }
+          p {
+          }
+          button {
+            display: none;
+            padding: 1rem 2.5rem;
+            .button-icon {
+            }
+            &:hover {
+            }
+          }
+        }
+        .image-section {
+          width: 100%;
+          margin-top: 2rem;
+          img {
+            width: 100%;
+            &:hover {
+            }
+          }
+        }
+      }
+
+      .cofounders {
+        width: 90%;
+        padding: 2rem 0;
+        h1 {
+          font-size: 3.4rem;
+        }
+        .cards {
+          width: 100%;
+          justify-content: center;
+          .card:nth-child(2) {
+            margin: 4rem 0rem;
+          }
+          .card {
+            padding: 1.1rem 0;
+            width: 80%;
+            &:hover {
+            }
+            .card-img {
+              img {
+                width: 85%;
+              }
+            }
+            .card-details {
+              padding-left: 2rem;
+              h2 {
+                padding: 1rem 0;
+              }
+              h5 {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+      }
+
+      .motto-section {
+        width: 90%;
+        margin: 2rem auto;
+        h2 {
+          text-align: center;
+          font-size: 4rem;
+          color: $white;
+          padding-top: 3rem;
+        }
+        .motto {
+          width: 80%;
+          margin: 2.5rem auto;
+          flex-direction: column;
+          justify-content: center;
+          padding: 1.5rem;
+          img {
+            width: 120px;
+            height: 120px;
+          }
+          p {
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 1.8rem;
+            color: $gray;
+            .quote-icon {
+              font-size: 1.5rem;
+            }
           }
         }
       }

@@ -49,7 +49,7 @@ const Details = () => {
     setTimeout(() => {
       setLoading(false);
       setBg(false);
-    }, 900);
+    }, 800);
   }, []);
   // Loading
 

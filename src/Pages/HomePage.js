@@ -26,7 +26,7 @@ const HomePage = () => {
     setTimeout(() => {
       setLoading(false);
       setBg(false);
-    }, 900);
+    }, 800);
   }, []);
   const styles = {
     background: bg ? "" : "rgba(0,0,0,0.5)",

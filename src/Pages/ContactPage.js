@@ -37,7 +37,7 @@ const ContactPage = () => {
     setTimeout(() => {
       setLoading(false);
       setBg(false);
-    }, 900);
+    }, 800);
   }, []);
   // Loading
 
@@ -56,13 +56,11 @@ const ContactPage = () => {
         <div className="contactpage">
           <div style={style} className="contact">
             <motion.nav
-              initial={{ y: -250 }}
-              animate={{ y: 5 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{
                 duration: 1,
-                delay: 1,
-                type: "tween",
-                stiffness: 100,
+                delay: 0.8,
               }}
             >
               <h1>IT Planet</h1>
