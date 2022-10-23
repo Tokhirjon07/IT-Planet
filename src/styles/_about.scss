@@ -31,7 +31,7 @@ $darkgray: rgb(202, 198, 198);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.7rem 1% 0.5rem 1%;
+      padding: 2rem 1% 0.7rem 1%;
       border-bottom: 1.5px solid $darkgray;
       width: 90%;
       margin: auto;
@@ -198,15 +198,20 @@ $darkgray: rgb(202, 198, 198);
         border-radius: $radius;
         padding: 1.5rem 5rem 1.5rem 4rem;
         box-shadow: $shadow;
-        img {
-          width: 100px;
-          height: 100px;
-          border-radius: 50%;
-          object-fit: cover;
-          margin-right: 3rem;
-          border-bottom: 2px solid $blue;
-          padding: 0.4rem;
+        .image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border-bottom: 2px solid $blue;
+            padding: 0.4rem;
+          }
         }
+
         p {
           color: $white;
           font-size: 1.9rem;
@@ -274,6 +279,7 @@ $darkgray: rgb(202, 198, 198);
           margin-top: 2rem;
           img {
             width: 100%;
+            height: 40vh;
             &:hover {
             }
           }
@@ -327,13 +333,19 @@ $darkgray: rgb(202, 198, 198);
         .motto {
           width: 80%;
           margin: 2rem auto;
+          display: flex;
+          align-items: center;
           flex-direction: column;
           justify-content: center;
           padding: 1.5rem 1rem;
-          img {
-            width: 85px;
-            height: 85px;
+          .image {
+            text-align: center;
+            img {
+              width: 85px;
+              height: 85px;
+            }
           }
+
           p {
             text-align: center;
             padding: 1rem 0;

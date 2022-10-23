@@ -27,7 +27,7 @@ $shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.7rem 1% 0.5rem 1%;
+      padding: 2rem 1% 0.7rem 1%;
       border-bottom: 1.5px solid $darkgray;
       width: 90%;
       margin: auto;
@@ -95,7 +95,7 @@ $shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
       font-size: 2rem;
       border-radius: $radius;
       color: $gray;
-      margin-left: 14.5rem ;
+      margin-left: 14.5rem;
       &:hover {
         border: $blueborder;
         color: $blue;
@@ -267,7 +267,8 @@ $shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
     }
 
     .info-planet {
-      width: 86%;
+      width: 90%;
+      padding-left: 1rem;
       h4 {
         font-size: 2.4rem;
         letter-spacing: 0.2rem;
@@ -289,7 +290,7 @@ $shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
 
   // BENEFIT STYLES SECTION STARTED
   .benefits {
-    width: 83%;
+    width: 90%;
     .card-benefits {
       .benefit {
         width: 100%;
@@ -306,15 +307,17 @@ $shadow: rgba(177, 177, 177, 0.4) 0px 2px 4px,
   // COURSE STYLES SECTION STARTED
   .containers {
     h3 {
-      font-size: 3.5rem;
+      font-size: 3.2rem;
     }
     .course-cards {
-      width: 80%;
+      width: 90%;
+      padding: 1rem;
       .card {
-        width: 100%;
-
+        width: 95%;
+        margin: 2rem auto;
         img {
-          height: 35vh;
+          height: 25vh;
+          object-fit: cover;
         }
       }
     }

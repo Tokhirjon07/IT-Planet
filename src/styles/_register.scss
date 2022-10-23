@@ -243,8 +243,10 @@ $blueborder: 1.1px solid #30bee0;
           margin: 0.5rem auto;
           width: 100%;
           input {
-            margin: 0.8rem 0;
+            margin: 0.7rem 0;
             width: 100%;
+            padding: 0.8rem 1.2rem;
+            font-size: 1.5rem;
           }
         }
         .user-location {
@@ -254,6 +256,8 @@ $blueborder: 1.1px solid #30bee0;
           input {
             width: 100%;
             margin: 0.9rem auto;
+            padding: 0.8rem 1.2rem;
+            font-size: 1.5rem;
           }
         }
         .user-choosen-course {
@@ -262,6 +266,8 @@ $blueborder: 1.1px solid #30bee0;
             select {
               width: 100%;
               margin: 0 auto;
+              padding: 0.8rem 1rem;
+              font-size: 1.5rem;
             }
           }
         }
@@ -271,6 +277,8 @@ $blueborder: 1.1px solid #30bee0;
           input {
             width: 100%;
             margin: 0.8rem 0;
+            padding: 0.8rem 1.2rem;
+            font-size: 1.5rem;
           }
         }
         .register-confirm {
@@ -289,8 +297,13 @@ $blueborder: 1.1px solid #30bee0;
           .reg-btns {
             .btn {
               padding: 0.6rem 2rem;
-              font-size: 1.7rem;
+              letter-spacing: $spacing;
+              text-transform: capitalize;
+              font-size: 1.6rem;
+              margin: 0.7rem 0rem 1rem 0.3rem;
               &:hover {
+                cursor: pointer;
+                transition: $anim;
               }
             }
           }

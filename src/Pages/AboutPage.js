@@ -168,7 +168,9 @@ const AboutPage = ({ modal, setModal }) => {
           <div className="motto-section">
             <h2>Our Quotes</h2>
             <div data-aos="zoom-in" className="motto">
-              <img src={recruter} alt="girl" />
+              <div className="image">
+                <img src={recruter} alt="girl" />
+              </div>
               <p>
                 <FontAwesomeIcon className="quote-icon" icon={faQuoteLeft} />
                 Believe! The code which you write will change the world
@@ -176,7 +178,9 @@ const AboutPage = ({ modal, setModal }) => {
               </p>
             </div>
             <div data-aos="zoom-in" className="motto">
-              <img src={founder1} alt="girl" />
+              <div className="image">
+                <img src={founder1} alt="girl" />
+              </div>
               <p>
                 <FontAwesomeIcon className="quote-icon" icon={faQuoteLeft} />
                 Programming is a skill best acquired by practice and example
@@ -185,7 +189,9 @@ const AboutPage = ({ modal, setModal }) => {
               </p>
             </div>
             <div data-aos="zoom-in" className="motto">
-              <img src={founder2} alt="girl" />
+              <div className="image">
+                <img src={founder2} alt="girl" />
+              </div>
               <p>
                 <FontAwesomeIcon className="quote-icon" icon={faQuoteLeft} />
                 Any fool can write code that a computer can understand. Good
